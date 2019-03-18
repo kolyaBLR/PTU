@@ -1,0 +1,4 @@
+university.Laboratory 3 1 2 31
+university.LectureRoom 1 2 3 3 1 true
+university.Laboratory 3 1 2 31
+university.LectureRoom 1 2 3 3 1 true
