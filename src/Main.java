@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         File file = new File();
-        //file.write(ConsoleReader.readData());
+        file.write(ConsoleReader.readData());
         ConsoleWriter.print(file.read());
     }
 }
