@@ -1,4 +1,3 @@
-university.Laboratory 3 1 2 31
-university.LectureRoom 1 2 3 3 1 true
-university.Laboratory 3 1 2 31
-university.LectureRoom 1 2 3 3 1 true
+university.Laboratory 1324 3142 4325 324
+university.LectureRoom 31 321 4 21 21 false
+university.TrainingClass 13 21 213 2 true

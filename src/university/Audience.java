@@ -36,6 +36,6 @@ public abstract class Audience implements Parcelable {
 
     @Override
     public String get() {
-        return number + " " + floor +  " " + area;
+        return number + " " + floor + " " + area;
     }
 }

@@ -34,6 +34,6 @@ public class TrainingClass extends Audience implements Parcelable {
 
     @Override
     public String get() {
-        return super.get() + numberOfDesks + " " + isComputer;
+        return super.get() + " " + numberOfDesks + " " + isComputer;
     }
 }
