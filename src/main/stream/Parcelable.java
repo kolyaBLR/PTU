@@ -1,4 +1,4 @@
-package stream;
+package main.stream;
 
 public interface Parcelable {
     String get();

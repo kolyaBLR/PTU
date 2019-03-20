@@ -1,3 +1,1 @@
-university.Laboratory 1324 3142 4325 324
-university.LectureRoom 31 321 4 21 21 false
-university.TrainingClass 13 21 213 2 true
+main.university.Laboratory 1 1 1 1

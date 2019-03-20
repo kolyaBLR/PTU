@@ -1,6 +1,6 @@
-package university;
+package main.university;
 
-import stream.Parcelable;
+import main.stream.Parcelable;
 
 public class LectureRoom extends Audience implements Parcelable {
 

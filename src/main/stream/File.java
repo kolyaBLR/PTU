@@ -1,8 +1,8 @@
-package stream;
+package main.stream;
 
-import university.Laboratory;
-import university.LectureRoom;
-import university.TrainingClass;
+import main.university.Laboratory;
+import main.university.LectureRoom;
+import main.university.TrainingClass;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -12,7 +12,11 @@ import java.util.List;
 
 public class File {
 
-    private static String FILE_NAME = "data.txt";
+    private String path;
+
+    public File(String path) {
+        this.path = path;
+    }
 
     public void write(Parcelable object) throws Exception {
         Parcelable[] objects = new Parcelable[1];
@@ -21,7 +25,7 @@ public class File {
     }
 
     public void write(List<Parcelable> objects) throws Exception {
-        try (FileWriter writer = new FileWriter(FILE_NAME, true)) {
+        try (FileWriter writer = new FileWriter(path, true)) {
             ArrayList<Parcelable> array = new ArrayList<>(objects);
             for (Parcelable item : array) {
                 String text = item.getClass().getName() + " " + item.get() + "\n";
@@ -37,7 +41,7 @@ public class File {
     }
 
     public List<Parcelable> read() throws Exception {
-        try (FileReader reader = new FileReader(FILE_NAME)) {
+        try (FileReader reader = new FileReader(path)) {
             ArrayList<Parcelable> result = new ArrayList<>();
             char symbol;
             StringBuilder line = new StringBuilder();
@@ -63,7 +67,7 @@ public class File {
         for (int i = 1; i < line.length; i++) {
             try {
                 data[i - 1] = Integer.parseInt(line[i]);
-            }catch (NumberFormatException ex) {
+            } catch (NumberFormatException ex) {
                 data[i - 1] = Boolean.parseBoolean(line[i]);
             }
         }

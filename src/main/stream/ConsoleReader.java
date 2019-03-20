@@ -1,8 +1,8 @@
-package stream;
+package main.stream;
 
-import university.Laboratory;
-import university.LectureRoom;
-import university.TrainingClass;
+import main.university.Laboratory;
+import main.university.LectureRoom;
+import main.university.TrainingClass;
 
 import java.io.BufferedReader;
 import java.io.IOException;
